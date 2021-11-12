@@ -154,7 +154,9 @@ def event_handle(event):
         elif (msg == "กินข้าวยังคะ") :
             replyObj = TextSendMessage(text="กินแล้วค่ะ")
         elif (msg == "อร่อยมั้ยคะ") :
-            replyObj = TextSendMessage(text="ก็อร่อยนะแต่เธออร่อยกว่า")
+            replyObj = TextSendMessage(text="ก็อร่อยนะแต่ไม่เท่าเธอ")
+        elif (msg == "เมื่อไหร่จะเลิกจีบคะ") :
+            replyObj = TextSendMessage(text="สักวันค่ะแต่ไม่ใช่วันนี้")
         else : 
             replyObj = TextSendMessage(text=msg)
         line_bot_api.reply_message(rtoken, replyObj)
